@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #3989f0;
+    --primary: #00aee4;
     --light: #F6F7F8;
     --dark: #1A2A36;
 }
@@ -375,6 +375,18 @@ ul li {
     margin-bottom: 10px; /* Añade un margen inferior a los elementos de la lista */
 }
 
+/* Ajusta el tamaño de las miniaturas */
+.thumbnail {
+    width: 100%; /* Asegura que todas las miniaturas tengan el mismo ancho */
+    height: 100px; /* Ajusta la altura de las miniaturas */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsionarse */
+}
+
+/* Footer styling to ensure it doesn't overlap */
+.footer {
+    position: relative;
+    z-index: 1;
+}
 /*** Service ***/
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
