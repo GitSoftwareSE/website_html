@@ -1,457 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!--
+Template Name: Surogou
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
-    <meta charset="utf-8">
-    <title>Fibras y Figuras</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+<title>Surogou</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-dark p-0">
-            <div class="row gx-0 d-none d-lg-flex">
-                <div class="col-lg-7 px-5 text-start">
-                    <div class="h-100 d-inline-flex align-items-center me-4">
-                        <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                        <small>Calle 99 Sur # 56-35. Barrio La Tablaza, La Estrella – Antioquia.</small>
-                    </div>
-                    <div class="h-100 d-inline-flex align-items-center">
-                        <small class="far fa-clock text-primary me-2"></small>
-                        <small>Mon - Fri : 07.00 AM - 05.00 PM</small>
-                    </div>
-                </div>
-                <div class="col-lg-5 px-5 text-end">
-                    <div class="h-100 d-inline-flex align-items-center me-4">
-                        <small class="fa fa-phone-alt text-primary me-2"></small>
-                        <small>604-322-05-75</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <img src="img/logo-fibrasyfiguras.png" alt="Fibras y Figuras" class="img-fluid" style="max-height: 70px;">
+            <img src="images/logo-fibrasyfiguras.png" alt="Fibras y Figuras" class="img-fluid" style="max-height: 85px;">
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="about.html" class="nav-item nav-link">Nuestra Empresa</a>
-                <a href="service.html" class="nav-item nav-link">Servicios</a>
-                <a href="gallery.html" class="nav-item nav-link">Gelería</a>
-            </div>
-            <a href="https://wa.me/3186404949" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Contáctenos<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-1-new.jpg'>">
-                <img class="img-fluid" src="img/carousel-1-new.jpg" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Innovación en Productos de Fibra de Vidrio</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Nos especializamos en el diseño y fabricación de productos de fibra de vidrio de alta calidad, adaptados a las necesidades de nuestros clientes en diversos sectores.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-3-new.jpg'>">
-                <img class="img-fluid" src="img/carousel-3-new.jpg" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Innovación en Productos de Fibra de Vidrio</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Nos especializamos en el diseño y fabricación de productos de fibra de vidrio de alta calidad, adaptados a las necesidades de nuestros clientes en diversos sectores.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-4-new.jpg'>">
-                <img class="img-fluid" src="img/carousel-4-new.jpg" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Innovación en Productos de Fibra de Vidrio</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Nos especializamos en el diseño y fabricación de productos de fibra de vidrio de alta calidad, adaptados a las necesidades de nuestros clientes en diversos sectores.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-5-new.jpg'>">
-                <img class="img-fluid" src="img/carousel-5-new.jpg" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Innovación en Productos de Fibra de Vidrio</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Nos especializamos en el diseño y fabricación de productos de fibra de vidrio de alta calidad, adaptados a las necesidades de nuestros clientes en diversos sectores.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-6-new.jpg'>">
-                <img class="img-fluid" src="img/carousel-6-new.jpg" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Innovación en Productos de Fibra de Vidrio</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Nos especializamos en el diseño y fabricación de productos de fibra de vidrio de alta calidad, adaptados a las necesidades de nuestros clientes en diversos sectores.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <!-- Carousel End -->
-
-
-        <!-- Feature Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="btn-lg-square bg-primary rounded-circle me-3">
-                            <i class="fa fa-lightbulb text-white"></i>
-                        </div>
-                    </div>
-                    <h5 class="mb-3">Años de Innovación</h5>
-                    <span>Nos destacamos por la innovación constante en el desarrollo de productos de fibra de vidrio.</span>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="btn-lg-square bg-primary rounded-circle me-3">
-                            <i class="fa fa-leaf text-white"></i>
-                        </div>
-                    </div>
-                    <h5 class="mb-3">Sostenibilidad</h5>
-                    <span>Comprometidos con prácticas sostenibles y el cuidado del medio ambiente.</span>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="btn-lg-square bg-primary rounded-circle me-3">
-                            <i class="fa fa-certificate text-white"></i>
-                        </div>
-                    </div>
-                    <h5 class="mb-3">Proyectos Completados</h5>
-                    <span>Hemos completado más de 1000 proyectos con éxito en diversos sectores.</span>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="btn-lg-square bg-primary rounded-circle me-3">
-                            <i class="fa fa-users text-white"></i>
-                        </div>
-                    </div>
-                    <h5 class="mb-3">Clientes Satisfechos</h5>
-                    <span>Nuestros clientes confían en nosotros por la calidad y el servicio excepcional.</span>
-                </div>
-            </div>
-        </div>
+    <div class="one_half">
+      <ul class="nospace clear">
+        <li class="one_half first">
+          <div class="block clear"><i class="fas fa-phone"></i> <span><strong class="block">Call Us:</strong> +00 (123) 456 7890</span> </div>
+        </li>
+        <li class="one_half">
+          <div class="block clear"><i class="far fa-clock"></i> <span><strong class="block"> Mon. - Sat.:</strong> 08.00am - 18.00pm</span> </div>
+        </li>
+      </ul>
     </div>
-    <!-- Feature End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/carousel-3-new.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <h6 class="text-primary">Acerca de nosotros</h6>
-                        <h1 class="mb-4">10+ Años de experiencia y reconocimiento</h1>
-                        <p>Fibras y Figuras S.A.S, fundada el 1 de noviembre de 2012, se especializa en el desarrollo y creación de productos personalizados que se adaptan a las necesidades de cada cliente. Nos destacamos por la fabricación de piezas únicas y especiales, siempre con un enfoque en la sostenibilidad y el cuidado del medio ambiente.</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Desarrollo de productos</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Piezas especiales</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Sostenibilidad</p>
-                        <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore mas</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear">
+    <!-- Icono de hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </div>
-    <!-- About End -->
-
-    <!-- Feature Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <h6 class="text-primary">¿Por qué elegirnos?</h6>
-                        <h1 class="mb-4">Soluciones Innovadoras en Fibra de Vidrio</h1>
-                        <p class="mb-4 pb-2">Nos especializamos en el desarrollo y creación de productos personalizados en fibra de vidrio, adaptándonos a las necesidades de cada cliente con un enfoque en la sostenibilidad y la calidad.</p>
-                        <div class="row g-4">
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-lightbulb text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Innovación</p>
-                                        <h5 class="mb-0">Constante</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-leaf text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Compromiso</p>
-                                        <h5 class="mb-0">Sostenible</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-certificate text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Calidad</p>
-                                        <h5 class="mb-0">Garantizada</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-users text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Atención</p>
-                                        <h5 class="mb-0">Personalizada</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/gallery-11.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Feature End -->
-<!-- Team Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h6 class="text-primary">Clientes satisfechos</h6>
-            <h1 class="mb-4">Algunos de nuestros clientes</h1>
-        </div>
-        <div class="partner-grid">
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.1s">
-                <img class="img-fluid" src="img/company-1.jpg" alt="Company 1">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.2s">
-                <img class="img-fluid" src="img/company-2.jpg" alt="Company 2">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.3s">
-                <img class="img-fluid" src="img/company-3.jpg" alt="Company 3">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.4s">
-                <img class="img-fluid" src="img/company-4.jpg" alt="Company 4">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.5s">
-                <img class="img-fluid" src="img/company-5.jpg" alt="Company 5">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.6s">
-                <img class="img-fluid" src="img/company-6.jpg" alt="Company 6">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.7s">
-                <img class="img-fluid" src="img/company-7.jpg" alt="Company 7">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.8s">
-                <img class="img-fluid" src="img/company-8.jpg" alt="Company 8">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.8s">
-                <img class="img-fluid" src="img/company-9.jpg" alt="Company 8">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.8s">
-                <img class="img-fluid" src="img/company-10.jpg" alt="Company 8">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.8s">
-                <img class="img-fluid" src="img/company-11.jpg" alt="Company 8">
-            </div>
-            <div class="partner-item wow fadeInUp" data-wow-delay="0.8s">
-                <img class="img-fluid" src="img/company-12.jpg" alt="Company 8">
-            </div>
-        </div>
-    </div>
+    <!-- Menú de navegación -->
+    <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">Pages</a>
+            <ul>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/full-width.html">Full Width</a></li>
+                <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+                <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+                <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+                <li><a href="pages/font-icons.html">Font Icons</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Link Text</a></li>
+        <li><a href="#">Link Text</a></li>
+        <li><a href="#">Link Text</a></li>
+        <li><a href="#">Long Link Text</a></li>
+    </ul>
+</nav>
 </div>
-<!-- Team End -->
-        <!-- WhatsApp Button Start -->
-        <div class="whatsapp-container">
-            <a href="https://wa.me/3186404949" class="whatsapp-button" target="_blank">
-                <img src="img/whatsapp-icon.png" alt="WhatsApp">
-            </a>
-            <div class="whatsapp-popup">
-                Cotiza con nosotros
-            </div>
+<!-- ################################################################################################ -->
+<!-- banner -->
+<div id="carouselExample" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="wrapper bgded" style="background-image:url('images/carousel.jpg');">
+        <div id="pageintro" class="hoc clear"> 
+          <article>
+            <h2 class="heading">Bienvenido a Fibras y Figuras SAS</h2>
+            <p class="body">Fibras y Figuras S.A.S, fundada el 1 de noviembre de 2012, se especializa en el desarrollo y creación de productos personalizados que se adaptan a las necesidades de cada cliente. Nos destacamos por la fabricación de piezas únicas y especiales, siempre con un enfoque en la sostenibilidad y el cuidado del medio ambiente.</p>
+            <footer>
+              <a class="btn-custom" href="#">Nuestras Soluciones</a>
+            </footer>
+          </article>
         </div>
-        <!-- WhatsApp Button End -->
-
-
- <!-- Footer Start -->
- <footer class="footer">
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Contáctenos</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Calle 99 Sur # 56-35. Barrio La Tablaza, La Estrella – Antioquia.</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>604-322-05-75</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>ventas@fibrasyfiguras.com - comercial@fibrasyfiguras.com</p>
-                    <p class="mb-2"><i class="fab fa-whatsapp me-3"></i>+57 318 640 4949</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Links Rápidos</h5>
-                    <a class="btn btn-link" href="about.html">Nuestra Empresa</a>
-                    <a class="btn btn-link" href="https://wa.me/3186404949">Contactenos</a>
-                    <a class="btn btn-link" href="service.html">Servicios</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Galería</h5>
-                    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-                    
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <a href="img/gallery-1.jpg" data-lightbox="gallery">
-                                <img class="img-fluid rounded thumbnail" src="img/gallery-1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="img/gallery-2.jpg" data-lightbox="gallery">
-                                <img class="img-fluid rounded thumbnail" src="img/gallery-2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="img/gallery-3.jpg" data-lightbox="gallery">
-                                <img class="img-fluid rounded thumbnail" src="img/gallery-3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="img/gallery-4.jpg" data-lightbox="gallery">
-                                <img class="img-fluid rounded thumbnail" src="img/gallery-4.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="img/gallery-5.jpg" data-lightbox="gallery">
-                                <img class="img-fluid rounded thumbnail" src="img/gallery-5.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="img/gallery-6.jpg" data-lightbox="gallery">
-                                <img class="img-fluid rounded thumbnail" src="img/gallery-6.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Incluye el JS de Lightbox -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Ubicación</h5>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.742617924926!2d-75.6435740852379!3d6.1443819955488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4690b8e4b9e4b3%3A0x2b8b8b8b8b8b8b8b!2sCalle%2099%20Sur%20%2356-35%2C%20La%20Estrella%2C%20Antioquia%2C%20Colombia!5e0!3m2!1sen!2sus!4v1633021234567!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Fibras y Figuras</a>, All Right Reserved.
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</footer>
-<!-- Footer End -->
+    <div class="carousel-item">
+      <div class="wrapper bgded" style="background-image:url('images/demo/backgrounds/01.png');">
+        <div id="pageintro" class="hoc clear"> 
+          <article>
+            <h2 class="heading">Bienvenido a Fibras y Figuras SAS</h2>
+            <p class="body">Fibras y Figuras S.A.S, fundada el 1 de noviembre de 2012, se especializa en el desarrollo y creación de productos personalizados que se adaptan a las necesidades de cada cliente. Nos destacamos por la fabricación de piezas únicas y especiales, siempre con un enfoque en la sostenibilidad y el cuidado del medio ambiente.</p>
+            <footer>
+              <a class="btn-custom" href="#">Nuestras Soluciones</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="wrapper bgded" style="background-image:url('images/carousel.jpg');">
+        <div id="pageintro" class="hoc clear"> 
+          <article>
+            <h2 class="heading">Bienvenido a Fibras y Figuras SAS</h2>
+            <p class="body">Fibras y Figuras S.A.S, fundada el 1 de noviembre de 2012, se especializa en el desarrollo y creación de productos personalizados que se adaptan a las necesidades de cada cliente. Nos destacamos por la fabricación de piezas únicas y especiales, siempre con un enfoque en la sostenibilidad y el cuidado del medio ambiente.</p>
+            <footer>
+              <a class="btn-custom" href="#">Nuestras Soluciones</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Controles para cambiar manualmente -->
+  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
 
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Quis est gravida facilisis</h6>
+      <p>Mauris tempor aenean pretium sem et luctus semper justo velit</p>
+    </div>
+    <ul class="nospace group overview">
+      <li class="one_third">
+        <figure><a href="#"><img src="images/carousel.jpg" alt=""></a>
+          <figcaption>
+            <h6 class="heading">Dapibus pede tristique</h6>
+            <p>Congue quam erat et dui morbi at sapien non enim blandit.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="#"><img src="images/demo/348x261.png" alt=""></a>
+          <figcaption>
+            <h6 class="heading">Interdum morbi posuere</h6>
+            <p>Etiam consequat arcu accumsan commodo luctus nibh fringilla.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="#"><img src="images/demo/348x261.png" alt=""></a>
+          <figcaption>
+            <h6 class="heading">Augue non vehicula</h6>
+            <p>Erat neque et tortor ut molestie ultricies quam aliquam.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="#"><img src="images/demo/348x261.png" alt=""></a>
+          <figcaption>
+            <h6 class="heading">Augue non vehicula</h6>
+            <p>Erat neque et tortor ut molestie ultricies quam aliquam.</p>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Vitae congue at urna suspendisse</h6>
+      <p>Vestibulum nisi ut lectus proin lectus ante fermentum sed</p>
+    </div>
+    <div class="group center">
+      <article class="one_third first"><a class="ringcon btmspace-50" href="#"><i class="fas fa-eraser"></i></a>
+        <h6 class="heading">Bibendum rutrum congue</h6>
+        <p>Tortor proin sagittis mauris ac odio morbi ut massa donec suscipit eros ut justo etiam non orci nullam at tortor maecenas eu.</p>
+      </article>
+      <article class="one_third"><a class="ringcon btmspace-50" href="#"><i class="fas fa-dolly-flatbed"></i></a>
+        <h6 class="heading">Neque lacinia ullamcorper</h6>
+        <p>Posuere etiam in arcu nam sodales euismod tellus quisque nunc mauris vehicula in ultrices tempor imperdiet vitae sapien morbi.</p>
+      </article>
+      <article class="one_third"><a class="ringcon btmspace-50" href="#"><i class="fas fa-text-width"></i></a>
+        <h6 class="heading">Accumsan dignissim libero</h6>
+        <p>Suspendisse potenti vestibulum mattis suspendisse potenti praesent nec ligula ut non ante sit amet est luctus dictum duis magna.</p>
+      </article>
+    </div>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper gradient">
+  <section id="testimonials" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Mauris tincidunt eu tincidunt</h6>
+      <p>In egestas vitae turpis sed velit urna sollicitudin ut euismod</p>
+    </div>
+    <article class="one_half first"><img src="images/demo/100x100.png" alt="">
+      <blockquote>Nec hendrerit vel velit ut sodales feugiat nulla proin porttitor lacus eget mi quisque in eros ut porttitor dapibus enim duis mollis accumsan purus etiam quis lorem hendrerit.</blockquote>
+      <h6 class="heading">G. Name</h6>
+      <em>Neque convallis pretium</em></article>
+    <article class="one_half"><img src="images/demo/100x100.png" alt="">
+      <blockquote>Vestibulum volutpat ut consequat tincidunt tortor nulla enim morbi id ante in felis iaculis faucibus duis nibh diam tristique scelerisque viverra at vulputate quis lacus donec.</blockquote>
+      <h6 class="heading">H. Name</h6>
+      <em>Vestibulum odio vivamus</em></article>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <section id="latest" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Ligula mi fringilla vel hendrerit</h6>
+      <p>Et malesuada vitae risus in a enim in metus ultrices tristique</p>
+    </div>
+    <ul class="nospace group">
+      <li class="one_third first">
+        <article>
+          <figure><a href="#"><img src="images/demo/348x261.png" alt=""></a>
+            <figcaption>
+              <time datetime="2045-04-06T08:15+00:00"><strong>06</strong> <em>Apr</em></time>
+            </figcaption>
+          </figure>
+          <div class="excerpt">
+            <h6 class="heading">Integer aliquet dignissim tellus</h6>
+            <ul class="nospace meta">
+              <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
+              <li><i class="fas fa-tags"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+            </ul>
+            <p>Vestibulum consequat praesent bibendum vehicula mi sed fermentum erat sit amet imperdiet dictum enim lectus [<a href="#">&hellip;</a>]</p>
+            <footer><a class="btn" href="#">Read More</a></footer>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <figure><a href="#"><img src="images/demo/348x261.png" alt=""></a>
+            <figcaption>
+              <time datetime="2045-04-05T08:15+00:00"><strong>05</strong> <em>Apr</em></time>
+            </figcaption>
+          </figure>
+          <div class="excerpt">
+            <h6 class="heading">Tortor tempus metus neque</h6>
+            <ul class="nospace meta">
+              <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
+              <li><i class="fas fa-tags"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+            </ul>
+            <p>Vel elit integer in orci vitae lacus ultricies mattis suspendisse congue sapien vel massa posuere lacinia [<a href="#">&hellip;</a>]</p>
+            <footer><a class="btn" href="#">Read More</a></footer>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <figure><a href="#"><img src="images/demo/348x261.png" alt=""></a>
+            <figcaption>
+              <time datetime="2045-04-04T08:15+00:00"><strong>04</strong> <em>Apr</em></time>
+            </figcaption>
+          </figure>
+          <div class="excerpt">
+            <h6 class="heading">Phasellus a ipsum eget odio</h6>
+            <ul class="nospace meta">
+              <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
+              <li><i class="fas fa-tags"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+            </ul>
+            <p>Fringilla tincidunt proin velit aliquam erat volutpat etiam elementum eros ut ante fusce a lacus ac neque [<a href="#">&hellip;</a>]</p>
+            <footer><a class="btn" href="#">Read More</a></footer>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper gradient">
+  <section id="cta" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">interdum pulvinar aliquam</h6>
+      <p>in urna proin luctus ligula eget mauris quisque congue malesuada</p>
+    </div>
+    <ul class="nospace clear">
+      <li class="one_third first">
+        <div class="block clear"><i class="fas fa-phone"></i> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-envelope"></i> <span><strong>Send us a mail:</strong> support@domain.com</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-map-marker-alt"></i> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span> </div>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h1 class="logoname"><span>Suro</span>gou</h1>
+      <p class="btmspace-30">Sem nam et erat nec eros elementum gravida proin bibendum diam sed congue sagittis metus risus rutrum mauris sed euismod nisl purus vel leo phasellus nunc erat cursus aliquet [<a href="#">&hellip;</a>]</p>
+      <ul class="faico clear">
+        <li><a class="faicon-dribble" href="#"><i class="fab fa-dribbble"></i></a></li>
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Massa hendrerit bibendum</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Tincidunt vel vulputate egestas</a></li>
+        <li><a href="#">Leo sed porttitor accumsan arcu</a></li>
+        <li><a href="#">Aenean ac urna et leo posuere</a></li>
+        <li><a href="#">Pretium suspendisse ac elit ut</a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Etiam auctor dignissim</h6>
+      <p class="nospace btmspace-15">Leo integer sem nisl mollis ut ornare eu lobortis eget ante mauris tempor.</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
 </body>
-
 </html>
