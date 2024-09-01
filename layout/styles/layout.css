@@ -21,6 +21,32 @@ File: Layout CSS
 .row4, .row4 a{}
 .row5{border-top:1px solid;}
 
+/* buttons
+------------------------------------------------------------ */
+.btn-custom {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #00aee4; /* Color de fondo */
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Escala el botón ligeramente al pasar el ratón */
+}
+
+/* Opcional: Agregar sombra para un efecto más destacado */
+.btn-custom:focus, .btn-custom:active {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
@@ -45,7 +71,19 @@ File: Layout CSS
 #header ul li div i{position:absolute; top:0; left:0; width:60px; height:60px; line-height:58px; font-size:22px; text-align:center; border:1px solid; border-radius:50%;}
 #header ul li div span{display:block; padding:8px 0 0 0;}
 
+#header .one_half p {
+    font-size: 0.8rem;
+	margin-right: 0px; /* Elimina los márgenes laterales */
+	margin-left: 130px;
+  }
+
 #header div:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
+
+@media only screen and (max-width: 600px) {
+	#header .one_half p {
+	  display: none;
+	}
+  }
 
 
 /* Page Intro
@@ -177,31 +215,6 @@ File: Layout CSS
     color: white;
 }
 
-/* Estilos para el botón personalizado */
-.btn-custom {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #007bff; /* Color de fondo */
-    border: none;
-    border-radius: 4px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-custom:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el ratón */
-    transform: scale(1.05); /* Escala el botón ligeramente al pasar el ratón */
-}
-
-/* Opcional: Agregar sombra para un efecto más destacado */
-.btn-custom:focus, .btn-custom:active {
-    outline: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 /* Estilos para el menú en dispositivos móviles */
 .menu-toggle {
     display: none;
@@ -250,35 +263,34 @@ File: Layout CSS
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:80px 0;}
-
+.container { 
+    padding: 80px 0;
+    width: 100%; /* Asegúrate de que el contenedor ocupe el 100% del ancho disponible */
+}
 /* Content */
 .container .content{}
 
-.sectiontitle {
+.heading-image { 
+    margin: 0 0 20px 0; 
+    font-size: 40px; 
+    line-height: normal; 
+    font-weight: bold; 
+    text-transform: capitalize; 
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+}
+
+.heading-image::after {
+    content: ''; /* No muestra texto, solo la línea */
     display: block;
-    max-width: 55%;
-    margin: 0 auto 80px;
-    text-align: center;
+    width: 160px; /* Ajusta el ancho de la línea según sea necesario */
+    height: 5px; /* Ajusta el grosor de la línea según sea necesario */
+    background-color: #00aee4; /* Color de la línea */
+    margin: 10px 0; /* Espaciado alrededor de la línea */
+    border-radius: 20px; /* Opcional: redondea las esquinas de la línea */
 }
 
 .sectiontitle * {
-    margin: 0;
-}
-
-/* Estilo para el contenedor de imagen con borde redondeado */
-.ringcon {
-    display: inline-block;
-    border: 1px solid;
-    border-radius: 50%;
-}
-
-.ringcon i {
-    display: block;
-    width: 160px;
-    height: 160px;
-    line-height: 160px;
-    font-size: 56px;
+    margin: 30;
 }
 
 /* Estilo para la lista de imágenes */
@@ -287,31 +299,25 @@ File: Layout CSS
     margin: 0;
     list-style: none;
     display: flex; /* Cambia la disposición a flexbox */
-    flex-wrap:nowrap; /* Permite que los elementos se envuelvan a la siguiente línea */
-    gap: 30px; /* Espacio entre las imágenes */
+    flex-wrap: none; /* Permite que los elementos se envuelvan a la siguiente línea */
+    gap: 20px; /* Espacio entre las imágenes */
 }
 
 /* Ajuste para los elementos de la lista */
 .overview > li {
-    width: calc(25% - 5px); /* Ajusta el tamaño para permitir cuatro imágenes en una fila y reduce el espacio entre ellas */
-    margin-right: 1px;
-    margin-bottom: 90px;
+    flex: 1 1 calc(25% - 20px); /* Ajusta el tamaño para permitir cuatro imágenes en una fila */
+    margin-bottom: 20px; /* Espacio debajo de cada imagen */
     box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
-}
-
-/* Elimina el margen inferior de los últimos elementos en la fila */
-.overview > li:nth-last-child(-n+4) {
-    margin-bottom: 0;
 }
 
 /* Ajusta las imágenes al tamaño del recuadro y añade el efecto de zoom */
 .overview > li figure {
-	position: relative;
-	overflow: hidden; /* Asegura que nada se desborde fuera del contenedor */
-	height: 200px; /* Aumenta la altura del recuadro para que sea más grande */
-	border-radius: 5px; /* Ajusta el radio del borde redondeado */
-	margin: 0; /* Elimina el margen alrededor del recuadro */
-	width: 300px; /* Ajusta el ancho del recuadro al 100% del contenedor */
+    position: relative;
+    overflow: hidden; /* Asegura que nada se desborde fuera del contenedor */
+    height: 200px; /* Ajusta la altura del recuadro para que sea más grande */
+    border-radius: 5px; /* Ajusta el radio del borde redondeado */
+    margin: 0 0 0 -50px; /* Elimina el margen alrededor del recuadro */
+    width: 120%; /* Ajusta el ancho del recuadro al 100% del contenedor */
 }
 
 /* Ajusta las imágenes al tamaño del recuadro y añade el efecto de zoom */
@@ -340,7 +346,12 @@ File: Layout CSS
     box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
     opacity: 0;
     transition: opacity 0.3s ease, border 0.3s ease; /* Transiciones suaves para el efecto hover */
-    border: 4px solid transparent; /* Borde azul alrededor del recuadro opaco */
+    border: 4px solid transparent; /* Borde alrededor del recuadro opaco */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    flex-direction: column; /* Alinea el contenido en una columna */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Centra el texto */
 }
 
 .overview > li figure:hover figcaption {
@@ -360,41 +371,211 @@ File: Layout CSS
 
 
 
+/* Estilo para pantallas móviles */
+@media (max-width: 768px) {
+    .overview > li {
+        flex: 1 1 100%; /* Cada imagen ocupa el 100% del ancho del contenedor en móviles */
+        margin-bottom: 20px; /* Espacio debajo de cada imagen */
 
-/* Comments */
-#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
-#comments li{margin:0 0 10px 0; padding:15px;}
-#comments .avatar{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid;}
-#comments address{font-weight:bold;}
-#comments time{font-size:smaller;}
-#comments .comcont{display:block; margin:0; padding:0;}
-#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
+    }
+	.overview > li figure {
+		position: relative;
+		overflow: hidden; /* Asegura que nada se desborde fuera del contenedor */
+		height: 200px; /* Ajusta la altura del recuadro para que sea más grande */
+		border-radius: 5px; /* Ajusta el radio del borde redondeado */
+		margin: 0; /* Elimina el margen alrededor del recuadro */
+		width: 100%; /* Ajusta el ancho del recuadro al 100% del contenedor */
+	}
 
-#comments form{display:block; width:100%;}
-#comments input, #comments textarea{width:100%; padding:10px; border:1px solid;}
-#comments textarea{overflow:auto;}
-#comments div{margin-bottom:15px;}
-#comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
+	.overview {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex; /* Cambia la disposición a flexbox */
+		flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+		gap: 20px; /* Espacio entre las imágenes */
+	}
+}
 
-/* Sidebar */
-.container .sidebar{}
+/* Algunas empresas */
+.partner-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+}
 
-.sidebar .sdb_holder{margin-bottom:50px;}
-.sidebar .sdb_holder:last-child{margin-bottom:0;}
+.partner-item {
+    flex: 1 1 150px; /* Ajusta el tamaño mínimo de las imágenes */
+    max-width: 150px; /* Ajusta el tamaño máximo de las imágenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.partner-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 110px; /* Ajusta la distancia desde el fondo */
+    right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.whatsapp-button {
+    width: 70px;
+    height: 70px;
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    border-radius: 50%; /* Hace el botón circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.whatsapp-button img {
+    width: 50px; /* Ajusta el tamaño del icono */
+    height: 50px;
+    object-fit: cover;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Color al pasar el mouse */
+}
+
+.whatsapp-popup {
+    margin-bottom: 10px; /* Espacio entre el botón y la ventana emergente */
+    padding: 10px;
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    text-align: center;
+    display: none; /* Oculto por defecto */
+    animation: slideDown 0.5s ease-out; /* Animación de deslizamiento */
+}
+
+.whatsapp-container:hover .whatsapp-popup {
+    display: block; /* Mostrar al pasar el ratón por encima */
+}
 
 
 /* Testimonials
 --------------------------------------------------------------------------------------------------------------- */
-#testimonials{}
+/* Contenedor de las tarjetas */
 
-#testimonials article{text-align:center;}
-#testimonials article *{margin:0; padding:0;}
-#testimonials article img{margin-bottom:20px; border-radius:50%;}
-#testimonials article blockquote{margin-bottom:20px; padding:20px;}
-#testimonials article blockquote::before{top:5px; left:5px; font-size:30px; line-height:30px;}
-#testimonials article .heading{font-size:1.4rem;}
-#testimonials article em{display:block; margin-top:-5px; font-size:.8rem; font-style:normal;}
+/* Estilo para el título */
+.heading-image-card { 
+    margin: 0 0 20px 0; 
+    font-size: 40px; 
+    line-height: normal; 
+    font-weight: bold; 
+    text-transform: capitalize; 
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+}
 
+.heading-image-card::after {
+    content: ''; /* No muestra texto, solo la línea */
+    display: block;
+    width: 160px; /* Ajusta el ancho de la línea según sea necesario */
+    height: 5px; /* Ajusta el grosor de la línea según sea necesario */
+    background-color: #00aee4; /* Color de la línea */
+    margin: 10px 0; /* Espaciado alrededor de la línea */
+    border-radius: 20px; /* Opcional: redondea las esquinas de la línea */
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px; /* Espacio más reducido entre las tarjetas */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor */
+    flex-wrap: wrap;
+}
+
+/* Estilos generales para cada tarjeta */
+.card {
+    background-color: #000 !important; /* Color negro para las tarjetas */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px; /* Ajusta la altura de la tarjeta */
+    flex: 1 1 calc(23.5% - 30px); /* Las tarjetas ocupan aproximadamente el 23.5% del contenedor */
+    min-width: 270px;
+    max-width: 300px;
+}
+
+/* Efecto de zoom y elevación al pasar el mouse */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+/* Efecto de fondo en hover */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco con transparencia en hover */
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Contenido de las tarjetas */
+.card-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: #fff; /* Texto en blanco para contraste */
+}
+
+/* Estilo del texto */
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* Texto en blanco */
+}
+
+.card p {
+    font-size: 1rem;
+    color: #fff; /* Texto en blanco */
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: 200px; /* Ajustar el tamaño en pantallas pequeñas */
+    }
+}
 
 /* Latest
 --------------------------------------------------------------------------------------------------------------- */
@@ -451,6 +632,63 @@ File: Layout CSS
 #footer input{display:block; width:100%; padding:8px;}
 #footer button{padding:8px 18px 10px; text-transform:uppercase; font-weight:700; cursor:pointer;}
 
+
+/* map
+--------------------------------------------------------------------------------------------------------------- */
+.map-container {
+	width: 100%;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .map-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+  }
+
+/* history 
+ 
+ --------------------------------------------------------------------------------------------------------------- */
+ .history-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .history-image {
+    flex: 0 0 40%;
+    margin-right: 20px;
+  }
+
+  .history-text {
+    flex: 1;
+  }
+
+  .history-image-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+ 
+
+  /* Responsive for mobile devices */
+  @media only screen and (max-width: 600px) {
+    .history-section {
+      flex-direction: column;
+    }
+
+    .history-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+ 
 
 /* Copyright
 --------------------------------------------------------------------------------------------------------------- */
@@ -514,15 +752,6 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #breadcrumb li:last-child a::after{display:none;}
 #breadcrumb .heading{margin:0; font-size:2rem;}
 
-/* Sidebar Navigation */
-.sidebar nav{display:block; width:100%;}
-.sidebar nav li{margin:0 0 3px 0; padding:0;}
-.sidebar nav a{display:block; position:relative; margin:0; padding:5px 10px 5px 15px; text-decoration:none; border:solid; border-width:0 0 1px 0;}
-.sidebar nav a::after{top:10px; left:5px; content:"\f0da";}
-.sidebar nav ul ul a{padding-left:35px;}
-.sidebar nav ul ul a::after{left:25px;}
-.sidebar nav ul ul ul a{padding-left:55px;}
-.sidebar nav ul ul ul a::after{left:45px;}
 
 /* Pagination */
 .pagination{display:block; width:100%; text-align:center; clear:both;}
@@ -604,7 +833,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
 .row1{color:#474747; background-color:#FFFFFF;}
 .row2{color:#474747; background-color:#F4F4F4;}
 .row3{color:#474747; background-color:#FFFFFF;}
-.row4{color:#474747; background-color:#FFFFFF;}
+.row4{color:#474747; background-color:#00aee4;}
 .row5, .row5 a{color:#474747; background-color:#FFFFFF;}
 .row5{border-color:rgba(0,0,0,.1);}
 
@@ -719,7 +948,7 @@ table a, #comments a{background-color:inherit;}
 
 	#mainav{padding:15px;}
 	#mainav ul{display:none;}
-	#mainav form{display:block;}
+	#mainav form{display:contents;}
 
 	#breadcrumb{}
 
